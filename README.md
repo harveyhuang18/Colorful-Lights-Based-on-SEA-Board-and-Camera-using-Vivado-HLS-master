@@ -11,7 +11,8 @@
 ### Compiling - 编译
   可以打开seaColorScan.xpr文件进行syhthesis和implementation,然后生成二进制文件，即可在SEA Board运行。<br>
 ## Running - 运行
-  生成的bit文件存入SD卡，将SEA Board设置为SD卡模式，即可开机运行。使用两枚按键Key1和Key2控制，前者负责“确定”，用于模式选择，后者负责“下一项”，用于调节模式以及调节摄像头模式中的光标。
+  bit文件工程已经生成过，保存于.\project7_30\seaColorScan.runs\impl_1\Camera_Demo.bit，可直接使用。
+  将bit文件存入SD卡，SEA Board设置为SD卡启动模式，连接上摄像头和HDMI屏幕，开机运行。使用两枚按键Key1和Key2控制，前者负责“确定”，用于模式选择，后者负责“下一项”，用于调节模式以及调节摄像头模式中的光标。
 ## Contact - 联系
   黄辰宇<br>
   东南大学 电子科学与工程学院<br>
