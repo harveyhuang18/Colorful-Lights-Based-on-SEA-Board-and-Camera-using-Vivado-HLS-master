@@ -3,7 +3,7 @@
 ## Introduction - 介绍
   本项目是2020年Xilinx暑期夏令营的结题项目，基于SEA Board开发板和Vivado2018.3开发平台，制成的一个多功能创客彩灯。功能包括：RGB彩灯显示摄像头识别的颜色、自定义彩灯颜色、自定义彩灯亮度。<br>
   本项目由东南大学黄辰宇、魏天宇合作完成。
-## Quick Start - 快速启动
+## Quick Start - 快速开始
 ### Requirements - 必要条件
   开发环境为Vivado2018.3及更新版本。<br>
   项目分为顶层模块和用于界面生成的Video_generator模块、用于摄像头图像输出的ScanColor模块，在顶层Camera_Demo中用状态机控制。<br>
