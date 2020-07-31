@@ -15,7 +15,7 @@
 ## Contact - 联系
   黄辰宇<br>
   东南大学 电子科学与工程学院<br>
-  email:213170628@seu.edu.cn
+  email:213170628@seu.edu.cn<br>
   魏天宇<br>
   东南大学 电子科学与工程学院<br>
   email:213172929@seu.edu.cn
