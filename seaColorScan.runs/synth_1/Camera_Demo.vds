@@ -1,0 +1,973 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 11:20:42 2020
+# Process ID: 9408
+# Current directory: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1
+# Command line: vivado.exe -log Camera_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Camera_Demo.tcl
+# Log file: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/Camera_Demo.vds
+# Journal file: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Camera_Demo.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/94305/Desktop/prototype1/IP_Core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/94305/Desktop/LED_Demo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 287.059 ; gain = 28.340
+Command: synth_design -top Camera_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13572 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.480 ; gain = 105.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Camera_Demo' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:23]
+	Parameter mode1 bound to: 6'b010000 
+	Parameter mode1_in bound to: 6'b100001 
+	Parameter mode1_in2 bound to: 6'b100010 
+	Parameter mode1_in3 bound to: 6'b100011 
+	Parameter mode2 bound to: 6'b100000 
+	Parameter mode3 bound to: 6'b110000 
+	Parameter red bound to: 6'b010001 
+	Parameter red_light bound to: 6'b010010 
+	Parameter orange bound to: 6'b010011 
+	Parameter orange_light bound to: 6'b010100 
+	Parameter yellow bound to: 6'b010101 
+	Parameter yellow_light bound to: 6'b010110 
+	Parameter green bound to: 6'b010111 
+	Parameter green_light bound to: 6'b011000 
+	Parameter blue bound to: 6'b011001 
+	Parameter blue_light bound to: 6'b011010 
+	Parameter purple bound to: 6'b011011 
+	Parameter purple_light bound to: 6'b011100 
+	Parameter white bound to: 6'b011101 
+	Parameter white_light bound to: 6'b011110 
+	Parameter back bound to: 6'b011111 
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (1#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'scanColor' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/scanColor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'getRGBaverge' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/getRGBaverge.v:22]
+	Parameter area_length bound to: 10 - type: integer 
+	Parameter width bound to: 1280 - type: integer 
+	Parameter height bound to: 720 - type: integer 
+	Parameter numerator bound to: 80 - type: integer 
+	Parameter denominator bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'getRGBaverge' (3#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/getRGBaverge.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (4#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (5#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_MIPI.v:75]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (6#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter Default_AXIS_TREADY bound to: 1'b1 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (7#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (8#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_IDLE_START bound to: 3'b001 
+	Parameter ST_PATTERN0 bound to: 3'b010 
+	Parameter ST_PATTERN1 bound to: 3'b011 
+	Parameter ST_IDLE_GR bound to: 3'b100 
+	Parameter ST_PATTERN2 bound to: 3'b101 
+	Parameter ST_PATTERN3 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'RAM_Line' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Line' (9#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (10#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (11#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/OV5647_Init.v:23]
+	Parameter SLAVE_ADDRESS bound to: 8'b01101100 
+	Parameter INITIAL_NUM bound to: 8'b01011000 
+	Parameter REG_ADDR2_EN bound to: 1'b1 
+	Parameter WR_HOLD_T bound to: 4'b1010 
+	Parameter WR_VALID bound to: 1'b1 
+	Parameter WAIT_DELAY bound to: 20'b00011000011010100000 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (13#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Trigger_Generator.v:23]
+	Parameter ST_WAIT bound to: 2'b00 
+	Parameter ST_START bound to: 2'b01 
+	Parameter ST_HOLD bound to: 2'b10 
+	Parameter ST_END bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (14#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Trigger_Generator.v:23]
+WARNING: [Synth 8-6014] Unused sequential element en_rd_rom_reg was removed.  [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/OV5647_Init.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (15#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/OV5647_Init.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_IIC.v:22]
+	Parameter System_Clk_MHz bound to: 13'b0000001100100 
+	Parameter Set_IIC_SCL_kHz bound to: 13'b0000001100100 
+	Parameter SCL_Divider bound to: 13'b0000000000001 
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter SCL_H_START bound to: 0 - type: integer 
+	Parameter SCL_H_CENTER bound to: 249 - type: integer 
+	Parameter SCL_L_START bound to: 499 - type: integer 
+	Parameter SCL_L_CENTER bound to: 749 - type: integer 
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_W_SADDR bound to: 5'b00010 
+	Parameter ST_ACK_0 bound to: 5'b00011 
+	Parameter ST_W_ADDR_H bound to: 5'b00100 
+	Parameter ST_ACK_1 bound to: 5'b00101 
+	Parameter ST_W_ADDR_L bound to: 5'b00110 
+	Parameter ST_ACK_2 bound to: 5'b00111 
+	Parameter ST_W_DATA bound to: 5'b01000 
+	Parameter ST_ACK_3 bound to: 5'b01001 
+	Parameter ST_START_R bound to: 5'b01010 
+	Parameter ST_W_SADDR_R bound to: 5'b01011 
+	Parameter ST_ACK_4 bound to: 5'b01100 
+	Parameter ST_R_DATA bound to: 5'b01101 
+	Parameter ST_NACK bound to: 5'b01110 
+	Parameter ST_STOP bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_IIC.v:388]
+WARNING: [Synth 8-5788] Register data_r_o_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_IIC.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (16#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Driver_IIC.v:22]
+WARNING: [Synth 8-3848] Net iic_read in module/entity scanColor does not have driver. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/scanColor.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'scanColor' (17#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/scanColor.v:23]
+WARNING: [Synth 8-350] instance 'scancolor1' of module 'scanColor' requires 22 connections, but only 19 given [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:148]
+INFO: [Synth 8-6157] synthesizing module 'KillJitter' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/killjitter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'KillJitter' (18#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/killjitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'video_generator' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/video_generator.v:21]
+	Parameter mode1 bound to: 6'b010000 
+	Parameter mode1_in bound to: 6'b100001 
+	Parameter mode2 bound to: 6'b100000 
+	Parameter mode3 bound to: 6'b110000 
+	Parameter red bound to: 6'b010001 
+	Parameter red_light bound to: 6'b010010 
+	Parameter orange bound to: 6'b010011 
+	Parameter orange_light bound to: 6'b010100 
+	Parameter yellow bound to: 6'b010101 
+	Parameter yellow_light bound to: 6'b010110 
+	Parameter green bound to: 6'b010111 
+	Parameter green_light bound to: 6'b011000 
+	Parameter blue bound to: 6'b011001 
+	Parameter blue_light bound to: 6'b011010 
+	Parameter purple bound to: 6'b011011 
+	Parameter purple_light bound to: 6'b011100 
+	Parameter white bound to: 6'b011101 
+	Parameter white_light bound to: 6'b011110 
+	Parameter back bound to: 6'b011111 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (19#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (20#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'video_generator' (21#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/video_generator.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LED_Demo_0' [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/LED_Demo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Demo_0' (22#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/.Xil/Vivado-9408-surface/realtime/LED_Demo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Camera_Demo' (23#1) [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:23]
+WARNING: [Synth 8-3331] design getRGBaverge has unconnected port vsync
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 465.734 ; gain = 162.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin MIPI_Camera_IIC:i_iic_read to constant 0 [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/scanColor.v:130]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 465.734 ; gain = 162.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 465.734 ; gain = 162.242
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Data_To_Csi'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Data_To_Csi'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Data_Read'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Data_Read'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'Mini_HDMI_Driver'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'Mini_HDMI_Driver'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'scancolor1/clk_10'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'scancolor1/clk_10'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/camera_clock'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'scancolor1/MIPI_Trans_Driver/camera_clock'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vg/pic_1_ROM'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vg/pic_1_ROM'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vg/pic_2_rom'
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vg/pic_2_rom'
+Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/LED_Demo_0/LED_Demo_0/LED_Demo_0_in_context.xdc] for cell 'RGB_LED'
+WARNING: [Constraints 18-619] A clock with name 'i_clk' already exists, overwriting the previous clock with the same name. [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/LED_Demo_0/LED_Demo_0/LED_Demo_0_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/LED_Demo_0/LED_Demo_0/LED_Demo_0_in_context.xdc] for cell 'RGB_LED'
+Parsing XDC File [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:50]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:50]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:51]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:51]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/frame_start_reg/C'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:53]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/frame_start_buff_reg[0]/D'. [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc:53]
+Finished Parsing XDC File [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Camera_Demo_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Camera_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Camera_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 778.184 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 778.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 778.184 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 778.184 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'vg/pic_1_ROM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'vg/pic_2_rom' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 778.184 ; gain = 474.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 778.184 ; gain = 474.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk. (constraint file  c:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mini_HDMI_Driver. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for scancolor1/MIPI_Trans_Driver/camera_clock. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vg/pic_1_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vg/pic_2_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for RGB_LED. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 778.184 ; gain = 474.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rgb_data_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Trigger_Generator'
+INFO: [Synth 8-5544] ROM "flg_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_scl_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_write_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_busy_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "R_In_nolumi" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:179]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:179]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/Camera_Demo.v:179]
+INFO: [Synth 8-5587] ROM size for "stateNext" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "stateNext" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "luminance" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "luminance" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "stateNext" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "stateNext" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "luminance" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "luminance" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'luminance_reg' in module 'Camera_Demo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                               00 |                               00
+                ST_START |                               01 |                               01
+                 ST_HOLD |                               10 |                               10
+                  ST_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_current_reg' using encoding 'sequential' in module 'Trigger_Generator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             1010
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE1 |                              100 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'luminance_reg' using encoding 'one-hot' in module 'Camera_Demo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 778.184 ; gain = 474.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 15    
+	  12 Input     24 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	  12 Input      8 Bit        Muxes := 1     
+	  19 Input      8 Bit        Muxes := 3     
+	  22 Input      6 Bit        Muxes := 1     
+	  23 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 2     
+	  19 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Camera_Demo 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 4     
+	   4 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 2     
+	  22 Input      6 Bit        Muxes := 1     
+	  23 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+Module getRGBaverge 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module ROM_OV5647 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module Trigger_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module OV5647_Init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_IIC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+Module KillJitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module video_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 11    
+	  12 Input     24 Bit        Muxes := 1     
+	  19 Input      8 Bit        Muxes := 3     
+	  19 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'blue_reg[15:0]' into 'blue_reg[15:0]' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/getRGBaverge.v:64]
+INFO: [Synth 8-4471] merging register 'green_reg[15:0]' into 'green_reg[15:0]' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/getRGBaverge.v:63]
+INFO: [Synth 8-4471] merging register 'red_reg[15:0]' into 'red_reg[15:0]' [C:/Users/94305/Desktop/project7_30/seaColorScan.srcs/sources_1/new/getRGBaverge.v:62]
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+DSP Report: Generating DSP r_average2, operation Mode is: A2*(B:0x50).
+DSP Report: register blue_reg is absorbed into DSP r_average2.
+DSP Report: operator r_average2 is absorbed into DSP r_average2.
+DSP Report: Generating DSP g_average2, operation Mode is: A2*(B:0x50).
+DSP Report: register red_reg is absorbed into DSP g_average2.
+DSP Report: operator g_average2 is absorbed into DSP g_average2.
+DSP Report: Generating DSP r_average2, operation Mode is: A2*(B:0x50).
+DSP Report: register green_reg is absorbed into DSP r_average2.
+DSP Report: operator r_average2 is absorbed into DSP r_average2.
+INFO: [Synth 8-5546] ROM "MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MIPI_Trans_Driver/Driver_Csi_To_Dvp0/addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MIPI_Camera_Driver/flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MIPI_Camera_Driver/flg_delay" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Address_reg, operation Mode is: C+A*(B:0x64).
+DSP Report: register Address_reg is absorbed into DSP Address_reg.
+DSP Report: operator Address0 is absorbed into DSP Address_reg.
+DSP Report: operator Address1 is absorbed into DSP Address_reg.
+INFO: [Synth 8-5587] ROM size for "stateNext" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3331] design getRGBaverge has unconnected port vsync
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\scancolor1/MIPI_Camera_Driver/Trigger_Write/buffer_out_level_reg )
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/OV5647/data_o_reg[15]' (FDC) to 'scancolor1/MIPI_Camera_Driver/OV5647/data_o_reg[23]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/OV5647/data_o_reg[23]' (FDC) to 'scancolor1/MIPI_Camera_IIC/state_current_reg[4]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/reg_addr_l_reg[7]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/reg_addr_h_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[7]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[6]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[5]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[4]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[3]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[2]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/iic_mode_reg'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[1]' (FDCE) to 'scancolor1/MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\scancolor1/MIPI_Camera_Driver/slave_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[7]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[4]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[6]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[5]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[4]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[3]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[2]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_r_reg[1]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_reg_addr_l_reg[7]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_reg_addr_h_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[7]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[4]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[6]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[5]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[4]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[1]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[3]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[2]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_iic_mode_reg'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[1]' (FDC) to 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[0]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/MIPI_Camera_IIC/buf_slave_addr_w_reg[0]' (FDC) to 'scancolor1/MIPI_Camera_IIC/state_current_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\scancolor1/MIPI_Camera_IIC/state_current_reg[4] )
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[0]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[1]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[2]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[3]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[4]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[5]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/B_In_nolumi_reg[6]' (FDE) to 'vg/B_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[0]' (FDE) to 'vg/G_In_nolumi_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[1]' (FDE) to 'vg/G_In_nolumi_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[2]' (FDE) to 'vg/G_In_nolumi_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[3]' (FDE) to 'vg/G_In_nolumi_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[4]' (FDE) to 'vg/G_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/G_In_nolumi_reg[5]' (FDE) to 'vg/G_In_nolumi_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[0]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[1]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[2]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[3]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[4]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[5]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/R_In_nolumi_reg[6]' (FDE) to 'vg/R_In_nolumi_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[0]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[0]' (FDRE) to 'vg/video_rbg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[1]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[1]' (FDRE) to 'vg/video_rbg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[2]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[2]' (FDRE) to 'vg/video_rbg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[3]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[3]' (FDRE) to 'vg/video_rbg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[4]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[4]' (FDRE) to 'vg/video_rbg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[5]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[5]' (FDRE) to 'vg/video_rbg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/g_average_reg[6]' (FDSE) to 'scancolor1/ga1/g_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[6]' (FDRE) to 'vg/video_rbg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'vg/video_rbg_reg[7]' (FDRE) to 'vg/video_rbg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[0]' (FDE) to 'scancolor1/ga1/b_average_reg[1]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[1]' (FDE) to 'scancolor1/ga1/b_average_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[2]' (FDE) to 'scancolor1/ga1/b_average_reg[3]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[3]' (FDE) to 'scancolor1/ga1/b_average_reg[4]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[4]' (FDE) to 'scancolor1/ga1/b_average_reg[5]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[5]' (FDE) to 'scancolor1/ga1/b_average_reg[6]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/b_average_reg[6]' (FDE) to 'scancolor1/ga1/b_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[0]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[1]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[2]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[3]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[4]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[5]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+INFO: [Synth 8-3886] merging instance 'scancolor1/ga1/r_average_reg[6]' (FDSE) to 'scancolor1/ga1/r_average_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 778.184 ; gain = 474.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM_OV5647  | p_0_out    | 128x24        | LUT            | 
+|scanColor   | p_0_out    | 128x24        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|getRGBaverge    | A2*(B:0x50)  | 16     | 7      | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|getRGBaverge    | A2*(B:0x50)  | 16     | 7      | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|getRGBaverge    | A2*(B:0x50)  | 16     | 7      | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|video_generator | C+A*(B:0x64) | 14     | 7      | 14     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'scancolor1/clk_10/clk_out1' to pin 'scancolor1/clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'scancolor1/clk_10/clk_out2' to pin 'scancolor1/clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'scancolor1/MIPI_Trans_Driver/camera_clock/clk_in1' to pin 'scancolor1/MIPI_Trans_Driver/Data_Read/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'scancolor1/MIPI_Trans_Driver/camera_clock/clk_out1' to pin 'scancolor1/MIPI_Trans_Driver/camera_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'scancolor1/MIPI_Trans_Driver/camera_clock/clk_in1' to 'scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/axis_tdata_i_reg[15]/C'
+WARNING: [Synth 8-565] redefining clock 'i_clk'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 820.367 ; gain = 516.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:17 . Memory (MB): peak = 943.391 ; gain = 639.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:17 ; elapsed = 00:02:22 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop scancolor1/MIPI_Camera_IIC/sda_dir_o_reg is being inverted and renamed to scancolor1/MIPI_Camera_IIC/sda_dir_o_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:22 ; elapsed = 00:02:26 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:22 ; elapsed = 00:02:26 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:22 ; elapsed = 00:02:27 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:22 ; elapsed = 00:02:27 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/hsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/set_x_o_reg[10]    | 6      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/set_x_o_reg[0]     | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/set_y_o_reg[9]     | 6      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/flg_pos_vde_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_i_reg[1]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/line2_reg[0][7]    | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |rgb2dvi_0       |         1|
+|2     |LED_Demo_0      |         1|
+|3     |clk_wiz_0       |         1|
+|4     |clk_wiz_1       |         1|
+|5     |csi2_d_phy_rx_0 |         1|
+|6     |csi_to_axis_0   |         1|
+|7     |RAM_Line        |         3|
+|8     |AXIS_Data_RAM   |         1|
+|9     |blk_mem_gen_0   |         1|
+|10    |blk_mem_gen_1   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |AXIS_Data_RAM   |     1|
+|2     |LED_Demo_0      |     1|
+|3     |RAM_Line        |     1|
+|4     |RAM_Line__3     |     1|
+|5     |RAM_Line__4     |     1|
+|6     |blk_mem_gen_0   |     1|
+|7     |blk_mem_gen_1   |     1|
+|8     |clk_wiz_0       |     1|
+|9     |clk_wiz_1       |     1|
+|10    |csi2_d_phy_rx_0 |     1|
+|11    |csi_to_axis_0   |     1|
+|12    |rgb2dvi_0       |     1|
+|13    |CARRY4          |   453|
+|14    |DSP48E1         |     3|
+|15    |DSP48E1_1       |     1|
+|16    |LUT1            |    69|
+|17    |LUT2            |   594|
+|18    |LUT3            |   707|
+|19    |LUT4            |   650|
+|20    |LUT5            |   409|
+|21    |LUT6            |   744|
+|22    |MUXF7           |    18|
+|23    |SRL16E          |    33|
+|24    |FDCE            |   149|
+|25    |FDPE            |     1|
+|26    |FDRE            |   608|
+|27    |IBUF            |     5|
+|28    |IOBUF           |     1|
+|29    |OBUF            |     3|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------------+--------------------+------+
+|      |Instance                   |Module              |Cells |
++------+---------------------------+--------------------+------+
+|1     |top                        |                    |  4581|
+|2     |  kj1                      |KillJitter          |    47|
+|3     |  kj2                      |KillJitter_0        |    54|
+|4     |  scancolor1               |scanColor           |  3606|
+|5     |    MIPI_Camera_Driver     |OV5647_Init         |   192|
+|6     |      OV5647               |ROM_OV5647          |    71|
+|7     |      Trigger_Write        |Trigger_Generator   |    18|
+|8     |    MIPI_Camera_IIC        |Driver_IIC          |   129|
+|9     |    MIPI_Trans_Driver      |Driver_MIPI         |   836|
+|10    |      Driver_Bayer_To_RGB0 |Driver_Bayer_To_RGB |   592|
+|11    |      Driver_Csi_To_Dvp0   |Driver_Csi_To_Dvp   |   172|
+|12    |    ga1                    |getRGBaverge        |  2423|
+|13    |  vg                       |video_generator     |   141|
++------+---------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:22 ; elapsed = 00:02:27 . Memory (MB): peak = 953.555 ; gain = 650.063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:14 . Memory (MB): peak = 953.555 ; gain = 337.613
+Synthesis Optimization Complete : Time (s): cpu = 00:02:22 ; elapsed = 00:02:27 . Memory (MB): peak = 953.555 ; gain = 650.063
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 476 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 953.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+190 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:28 ; elapsed = 00:02:34 . Memory (MB): peak = 953.555 ; gain = 662.098
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 953.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/Camera_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Camera_Demo_utilization_synth.rpt -pb Camera_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 11:23:36 2020...

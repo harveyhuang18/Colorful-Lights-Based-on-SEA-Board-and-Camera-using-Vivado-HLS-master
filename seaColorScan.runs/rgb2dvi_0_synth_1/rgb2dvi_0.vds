@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 29 11:34:37 2020
+# Process ID: 15680
+# Current directory: D:/xilinx/prototype1/Camera_Demo.runs/rgb2dvi_0_synth_1
+# Command line: vivado.exe -log rgb2dvi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2dvi_0.tcl
+# Log file: D:/xilinx/prototype1/Camera_Demo.runs/rgb2dvi_0_synth_1/rgb2dvi_0.vds
+# Journal file: D:/xilinx/prototype1/Camera_Demo.runs/rgb2dvi_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rgb2dvi_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx/prototype1/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP rgb2dvi_0, cache-ID = c5cc76649096bba8.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 11:34:47 2020...

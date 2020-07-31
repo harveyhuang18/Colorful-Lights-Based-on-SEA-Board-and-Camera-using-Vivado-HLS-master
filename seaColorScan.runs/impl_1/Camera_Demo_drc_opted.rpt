@@ -1,0 +1,59 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 11:25:17 2020
+| Host         : surface running 64-bit major release  (build 9200)
+| Command      : report_drc -file Camera_Demo_drc_opted.rpt -pb Camera_Demo_drc_opted.pb -rpx Camera_Demo_drc_opted.rpx
+| Design       : Camera_Demo
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| BUFC-1      | Warning  | Input Buffer Connections                                    | 1          |
+| DPIP-1      | Warning  | Input pipelining                                            | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer scancolor1/Camera_IIC_SDA_IOBUF/IBUF (in scancolor1/Camera_IIC_SDA_IOBUF macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP vg/Address_reg input vg/Address_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP vg/Address_reg input vg/Address_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT kj1/FSM_onehot_luminance[2]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+FSM_onehot_luminance_reg[0], FSM_onehot_luminance_reg[1], FSM_onehot_luminance_reg[2], stateNext_reg[0], stateNext_reg[1], stateNext_reg[2], stateNext_reg[3], stateNext_reg[4], stateNext_reg[5]
+Related violations: <none>
+
+

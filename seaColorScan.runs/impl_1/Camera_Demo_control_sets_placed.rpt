@@ -1,0 +1,125 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 11:26:55 2020
+| Host         : surface running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Camera_Demo_control_sets_placed.rpt
+| Design       : Camera_Demo
+| Device       : xc7s15
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    49 |
+| Unused register locations in slices containing registers |   153 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            2 |
+|      3 |            2 |
+|      4 |            3 |
+|      5 |            4 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            4 |
+|      9 |            1 |
+|     10 |            4 |
+|     11 |            3 |
+|     13 |            2 |
+|    16+ |           20 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             531 |          175 |
+| No           | No                    | Yes                    |             127 |           40 |
+| No           | Yes                   | No                     |              73 |           26 |
+| Yes          | No                    | No                     |             240 |           93 |
+| Yes          | No                    | Yes                    |              31 |           10 |
+| Yes          | Yes                   | No                     |             285 |           77 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+|                            Clock Signal                           |                                      Enable Signal                                      |                                     Set/Reset Signal                                     | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+|  scancolor1/clk_10/inst/clk_out1                                  | scancolor1/MIPI_Camera_IIC/iic_sda_o_i_1_n_0                                            | scancolor1/MIPI_Camera_Driver/OV5647/i_rst                                               |                1 |              1 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/pclk |                                                                                         |                                                                                          |                1 |              1 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/in0                                       |                1 |              2 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/aRst_int_0                  |                1 |              2 |
+|  RGB_LED/inst/clk_10/inst/clk_10MHz                               | RGB_LED/inst/RGB_LED_Task0/Driver_SK6805_0/Data_Cnt[5]_i_2_n_0                          |                                                                                          |                2 |              3 |
+|  RGB_LED/inst/clk_10/inst/clk_10MHz                               | RGB_LED/inst/RGB_LED_Task0/Driver_SK6805_0/Data_Cnt[5]_i_2_n_0                          | RGB_LED/inst/RGB_LED_Task0/Driver_SK6805_0/Data_Cnt[5]_i_1_n_0                           |                1 |              3 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vid_active_video_o0                     | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/unpack_cnt                               |                1 |              4 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/E[0]                                  |                                                                                          |                2 |              4 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1]   |                2 |              4 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/end_dly_0                   |                                                                                          |                2 |              5 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/start_dly_1                 |                                                                                          |                1 |              5 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/sum_dly                     |                                                                                          |                2 |              5 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/curr_delay                  |                                                                                          |                3 |              5 |
+|  RGB_LED/inst/clk_10/inst/clk_10MHz                               |                                                                                         |                                                                                          |                4 |              6 |
+|  scancolor1/clk_10/inst/clk_out1                                  | scancolor1/MIPI_Camera_Driver/initial_cnt[6]_i_1_n_0                                    | scancolor1/MIPI_Camera_Driver/OV5647/i_rst                                               |                2 |              7 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/to_cnt[1]_1                 | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/p_5_out[1]                   |                3 |              8 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/to_cnt[0]_2                 | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/p_5_out[0]                   |                2 |              8 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/packet_size[15]                 |                                                                                          |                3 |              8 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/data_shift[1]_0             |                                                                                          |                5 |              8 |
+| ~kj1/CLK                                                          |                                                                                         |                                                                                          |                3 |              9 |
+|  RGB_LED/inst/clk_10/inst/clk_10MHz                               | RGB_LED/inst/RGB_LED_Task0/Driver_SK6805_0/Send_Cnt[9]_i_1_n_0                          |                                                                                          |                4 |             10 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/axis_tvalid_i_reg_n_0_[0]               | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/flg_down_valid                           |                3 |             10 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0                |                4 |             10 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vdata                                   | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vdata[9]_i_1_n_0                         |                2 |             10 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/flg_rise_frame                           |                4 |             11 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/sel                                   | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/addr_bram[10]_i_1_n_0                  |                3 |             11 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vid_active_video_o0                     | scancolor1/MIPI_Trans_Driver/Driver_Csi_To_Dvp0/addrb_0                                  |                3 |             11 |
+|  scancolor1/clk_10/inst/clk_out2                                  |                                                                                         |                                                                                          |               10 |             13 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/wait_cnt                    | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.wait_cnt[12]_i_1_n_0 |                4 |             13 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/packet_size[7]                  |                                                                                          |                6 |             16 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_2_n_0        | scancolor1/MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_1_n_0         |                4 |             16 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vde_o_reg_0                           | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/SR[0]                                  |                6 |             16 |
+| ~scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  |                                                                                         |                                                                                          |                4 |             17 |
+|  scancolor1/clk_10/inst/clk_out2                                  |                                                                                         | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0  |                6 |             20 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_val[0]_i_1_n_0  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0  |                5 |             20 |
+|  scancolor1/clk_10/inst/clk_out2                                  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0 |                                                                                          |                6 |             20 |
+|  scancolor1/clk_10/inst/clk_out1                                  | scancolor1/MIPI_Camera_Driver/flg_data_ok_i_1_n_0                                       | scancolor1/MIPI_Camera_Driver/OV5647/i_rst                                               |                7 |             23 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/rgb_data_g[9]_i_1_n_0                 |                                                                                          |                7 |             24 |
+|  i_clk_IBUF                                                       | kj1/cnt[0]_i_1__0_n_0                                                                   | key_in1_IBUF                                                                             |                8 |             31 |
+|  i_clk_IBUF                                                       | kj2/cnt[0]_i_1_n_0                                                                      | key_in2_IBUF                                                                             |                8 |             31 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/ga1/cnt[0]_i_1__1_n_0                                                        |                                                                                          |                8 |             31 |
+|  i_clk_IBUF                                                       |                                                                                         |                                                                                          |               13 |             32 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         | Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/SR[0]                                    |               12 |             32 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  | scancolor1/MIPI_Trans_Driver/Data_Read/U0/dl0_rxvalidhs                                 |                                                                                          |               16 |             48 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/ga1/red[15]_i_1_n_0                                                          |                                                                                          |               26 |             48 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          | scancolor1/MIPI_Trans_Driver/Driver_Bayer_To_RGB0/rcnt                                  | scancolor1/ga1/red[15]_i_1_n_0                                                           |               24 |             93 |
+|  scancolor1/clk_10/inst/clk_out1                                  |                                                                                         | scancolor1/MIPI_Camera_Driver/OV5647/i_rst                                               |               36 |            119 |
+|  scancolor1/MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK  |                                                                                         |                                                                                          |               42 |            140 |
+|  scancolor1/MIPI_Trans_Driver/camera_clock/inst/clk_out1          |                                                                                         |                                                                                          |               98 |            346 |
++-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+
+

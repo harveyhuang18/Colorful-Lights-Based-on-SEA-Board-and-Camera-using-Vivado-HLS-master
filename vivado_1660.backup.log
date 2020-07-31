@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 21:20:38 2020
+# Process ID: 1660
+# Current directory: C:/Users/94305/Desktop/project7_30
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14540 C:\Users\94305\Desktop\project7_30\seaColorScan.xpr
+# Log file: C:/Users/94305/Desktop/project7_30/vivado.log
+# Journal file: C:/Users/94305/Desktop/project7_30\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/94305/Desktop/project7_30/seaColorScan.xpr
+INFO: [Project 1-313] Project file moved from 'D:/xilinx/7-29' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/94305/Desktop/prototype1/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was caupdate_compilINFO: [Common 17-206] Exitireset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 21:51:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Jul 30 21:55:15 2020] Launched impl_1...
+Run output will be captured here: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 30 21:59:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/94305/Desktop/project7_30/seaColorScan.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 22:23:42 2020...
